@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Dice Game</title>
+</head>
+
+<body>
+    <h1>Dice Game</h1>
+    <main>
+        <section>
+            <div id="dice-container">
+                <h2>Player 1</h2>
+                <div id="player1-dice"></div>
+                <p id="player1-score">Score: 0</p>
+            </div>
+        </section>
+        <section>
+            <div id="dice-container">
+                <h2>Player 2</h2>
+                <div id="player2-dice"></div>
+                <p id="player2-score">Score: 0</p>
+            </div>
+        </section>
+    </main>
+    <button id="roll-button" onclick="rollDice()">Roll for Player 1</button>
+    <div id="winner"></div>
+    <button id="refresh-button" onclick="resetGame()" style="display: none;">Refresh</button>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
